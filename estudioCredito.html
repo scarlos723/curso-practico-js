@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacidad de endeudamiento</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+ 
+  <div class="container">
+    <section>
+      <h1>Calcula tu capacidad de endeudamiento</h1>
+      <div class="card">
+        <form action="">
+          <div class="inputContainer">
+            <label for="inputIngresosMes">Ingresos totales al mes:</label>
+            <input id="inputIngresosMes" type="number" min="0">
+          </div>
+          <div class="inputContainer">
+            <label for="inputGastosMes">Gastos totales al mes:</label>
+            <input id='inputGastosMes' type="number" min="0">
+          </div>
+          <div class="inputContainer porcentaje">
+            <label for="inputPorcentaje" >% Porcentaje:</label>
+            <input id='inputPorcentaje' type="number"  value='40' min="1" max="100">
+          </div>
+          <p>Para Colombia se usa el 40%, puedes ajustarlo para tu país</p>
+         
+        </form>
+        <p id="resultado"></p>
+      </div>
+    </section>
+    
+  </div>
+  <div class="btnContainer">
+    <button type="button" onclick="calcularCapacidad()">Calcular</button>
+  </div>
+  
+  <script src="./analisisCredito.js"></script>
+</body>
+</html>
