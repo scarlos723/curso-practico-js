@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descuentos</title>
+  <style>
+
+    .container{
+      display:  grid;
+      justify-content: center;
+     
+    }
+    .container form{
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      padding: 8px;
+      border: 1px solid gray;
+      border-radius: 12px;
+    }
+    .containerImg {
+      display: flex;
+      flex-direction: column;
+    }
+    .inputContainer {
+      margin-bottom: 16px;
+      width: 300px;
+    }
+    .inputContainer img {
+      width: 100%;
+    }
+    .inputContainer input{
+      background-color: azure;
+      border-radius: 12px;
+      border: 1px solid gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <div class="inputContainer">
+        <label for="inputPrice">Price</label>
+        <input id="inputPrice" type="number">
+      </div>
+      <div class="inputContainer">
+        <label for="inputDiscount">Discount</label>
+        <input id="inputDiscount" type="number">
+      </div>
+      <div class="inputContainer">
+        <label for="inputCoupon">Coupon</label>
+        <input id="inputCoupon" type="text">
+      </div>
+      <button type="button" onclick="calcularDescuento()"> Calcular </button>
+    </form>
+ 
+    <p id="result"> </p>
+
+    
+  </div>
+  <script src="./descuentos.js"></script>
+</body>
+</html>
